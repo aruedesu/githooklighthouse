@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-realworld-example-app",
+  "name": "githooklighthouse",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -29,5 +29,15 @@
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "light-help": "lighthouse http://localhost:4100/"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aruedesu/githooklighthouse.git"
+  },
+  "author": "Alliance Rommel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aruedesu/githooklighthouse/issues"
+  },
+  "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
 }
