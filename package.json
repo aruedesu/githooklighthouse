@@ -42,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "npm lighthouse http://localhost:4100/"
+      "post-commit": "npm lighthouse http://localhost:4100/ --no-verify"
     }
   },
   "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
