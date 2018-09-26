@@ -40,5 +40,10 @@
   "bugs": {
     "url": "https://github.com/aruedesu/githooklighthouse/issues"
   },
+  "husky": {
+    "hooks": {
+      "post-commit": "npm lighthouse http://localhost:4100/"
+    }
+  },
   "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
 }
