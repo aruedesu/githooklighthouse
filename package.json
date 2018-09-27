@@ -6,6 +6,7 @@
     "cross-env": "^5.1.4",
     "husky": "^1.0.0",
     "lighthouse": "^3.1.1",
+    "lighthouse-batch": "^3.0.0",
     "react-scripts": "1.1.1"
   },
   "dependencies": {
@@ -29,7 +30,7 @@
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "light-help": "lighthouse http://localhost:4100/"
+    "lighthouse-batch": "lighthouse-batch -s https://airhorner.com, http://localhost:4100/"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "npm lighthouse http://localhost:4100/ --no-verify"
+      "post-commit": "npm run lighthouse-batch"
     }
   },
   "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
