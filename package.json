@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lighthouse-audit": "lighthouse-batch -s http://localhost:4100/register,http://localhost:4100/register,http://localhost:4100/login -g"
+    "lighthouse-audit": "lighthouse-batch -s -h http://localhost:4100/register,http://localhost:4100/register,http://localhost:4100/login -g"
   },
   "repository": {
     "type": "git",
