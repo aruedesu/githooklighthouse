@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "npm run lighthouse-batch"
+      "post-commit": "npm run lighthouse-audit"
     }
   },
   "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
