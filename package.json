@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "commander": "^2.18.0",
+    "committed-git-files": "0.0.1",
     "cross-env": "^5.1.4",
     "husky": "^1.0.0",
     "lighthouse": "^3.2.0",
