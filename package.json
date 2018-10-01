@@ -13,6 +13,7 @@
   "dependencies": {
     "history": "^4.6.3",
     "marked": "^0.3.6",
+    "node-csv": "^0.1.2",
     "prop-types": "^15.5.10",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
@@ -31,7 +32,7 @@
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lighthouse-audit": "lighthouse-batch --html -s http://localhost:4100/register,http://localhost:4100/register,http://localhost:4100/login -g"
+    "start-audit": "node lighthouse-audit.js"
   },
   "repository": {
     "type": "git",
@@ -44,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "post-commit": "npm run lighthouse-audit"
+      "post-commit": "npm run start-audit"
     }
   },
   "homepage": "https://github.com/aruedesu/githooklighthouse#readme"
