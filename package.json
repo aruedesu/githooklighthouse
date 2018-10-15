@@ -6,15 +6,16 @@
     "commander": "^2.18.0",
     "committed-git-files": "0.0.1",
     "cross-env": "^5.1.4",
+    "csv-writer": "^1.2.0",
     "husky": "^1.0.0",
     "lighthouse": "^3.2.0",
     "lighthouse-batch": "^3.0.0",
+    "nodecsv": "^1.1.0",
     "react-scripts": "1.1.1"
   },
   "dependencies": {
     "history": "^4.6.3",
     "marked": "^0.3.6",
-    "node-csv": "^0.1.2",
     "prop-types": "^15.5.10",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
@@ -33,7 +34,8 @@
     "build": "react-scripts build",
     "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-audit": "node lighthouse-audit.js"
+    "gen-audit-list": "node generate-audit-list.js",
+    "start-audit": "node lighthouse/lighthouse-audit.js "
   },
   "repository": {
     "type": "git",

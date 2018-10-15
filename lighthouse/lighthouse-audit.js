@@ -1,11 +1,11 @@
 var readCSV = require('nodecsv').readCSV;
 var child = require('child_process');
 var path = require('path'), fs=require('fs');
-const parseJson = require('parse-json');
-parseJson(json, 'config.json');
- 
- 
-JSON.parse(json);
+var config = require('./config.json');
+var jsonfile = require('jsonfile');
+var file = './lighthouse/config.json';
+
+
 
 function fromDir(startPath,filter,callback){
 
@@ -26,8 +26,8 @@ function fromDir(startPath,filter,callback){
         else if (filter.test(filename)) callback(filename);
     };
 };
-
-fromDir('../githooklighthouse/src/components/Home',/\.csv$/,function(filename){
+console.log(config.root + config.module);
+fromDir(config.root + config.module,/\.csv$/,function(filename){
     var parseDir = filename.replace(/\\/g, '/');
     var urls = '';
 

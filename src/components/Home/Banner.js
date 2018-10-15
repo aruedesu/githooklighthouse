@@ -17,3 +17,4 @@ const Banner = ({ appName, token }) => {
 };
 
 export default Banner;
+ 
